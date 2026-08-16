@@ -13,7 +13,7 @@ Plays `.flac`, `.mp3`, `.wav` files.
 
 ## Audio folder
 
-Player scans the folder and its subfolders specified in `api.php` on line 8.
+Player scans the folder and its subfolders specified in `api.php` on line 8.  
 Make sure PHP has access to that folder.
 
 Example:
