@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <aside class="library">
+      <div class="library-head">
+        <div>
+          <h1>Music Player</h1>
+          <p id="library-path">Main/Muzyka</p>
+        </div>
+        <button id="refresh" class="icon-btn" title="Odśwież bibliotekę">↻</button>
+      </div>
+
+      <div id="browser" class="browser">
+        <div class="loading">Skanowanie biblioteki…</div>
+      </div>
+    </aside>
+
+    <section class="player">
+      <div class="now-playing">
+        <div class="cover-wrap">
+          <img id="cover" alt="Okładka albumu">
+        </div>
+        <div class="track-info">
+          <div id="title" class="title">Wybierz utwór</div>
+          <div id="artist" class="artist">—</div>
+          <div id="album" class="album">—</div>
+          <div id="folder" class="folder">—</div>
+        </div>
+      </div>
+
+      <div class="progress-area">
+        <span id="current-time">0:00</span>
+        <input id="progress" type="range" min="0" max="100" value="0" step="0.1">
+        <span id="duration">0:00</span>
+      </div>
+
+      <div class="controls">
+        <button id="prev" class="control-btn" title="Poprzedni utwór">⏮</button>
+        <button id="play" class="play-btn" title="Odtwórz / pauza">▶</button>
+        <button id="next" class="control-btn" title="Następny utwór">⏭</button>
+      </div>
+
+      <div class="volume">
+        <span id="volume-icon">🔊</span>
+        <input id="volume" type="range" min="0" max="1" value="0.7" step="0.01">
+        <span id="volume-value">70%</span>
+      </div>
+
+      <div id="status" class="status">Gotowe</div>
+    </section>
+  </main>
+
+  <audio id="audio" preload="metadata"></audio>
+  <script src="app.js"></script>
+</body>
+</html>
