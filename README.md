@@ -1,4 +1,4 @@
-# Music Player
+# Audio Player
 
 A simple HTML5+PHP Audio Player.  
 Plays `.flac`, `.mp3`, `.wav` files.
@@ -11,7 +11,7 @@ Plays `.flac`, `.mp3`, `.wav` files.
   - Nginx + PHP-FPM
   - PHP's built-in server for testing
 
-## Music folder
+## Audio folder
 
 Player scans the folder and its subfolders specified in `api.php` on line 8.
 
